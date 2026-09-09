@@ -1,0 +1,60 @@
+.banner {
+  background-color: #5e9fc2;
+  color: white;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.banner-image picture {
+  display: block;
+  width: 100%;
+}
+
+.banner-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.banner-title {
+  margin: 0;
+  color: white;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+@media (width >= 900px) {
+  .banner {
+    padding: 48px 64px;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .banner-image {
+    width: 50%;
+  }
+
+  .banner-title {
+    width: 50%;
+    font-size: 40px;
+  }
+
+/* Dark banner variant */
+.banner.banner {
+  background-color: #483030;
+  color: white;
+}
+
+.banner.banner .banner-title {
+  color: white;
+}
+
+}

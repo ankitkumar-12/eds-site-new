@@ -11,13 +11,17 @@
  */
 
 :root {
-  /* colors */
-  --background-color: cyan;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: magenta;
-  --link-color: #3b63fb;
-  --link-hover-color: red;
+ --background-color: #F7F8FA;
+
+--light-color: #F3F4F6;
+
+--dark-color: #111827;
+
+--text-color: #1F2937;
+
+--link-color: #2563EB;
+
+--link-hover-color: #1D4ED8;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -322,4 +326,11 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+
+
+
+.section[data-background="light-grey"] {
+  background-color: #EFEFEF;
 }
