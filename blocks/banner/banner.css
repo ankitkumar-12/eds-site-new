@@ -30,6 +30,16 @@
   line-height: 1.2;
 }
 
+/* Dark variant: authored as "Banner (dark)" -> class "dark" */
+.banner.dark {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.banner.dark .banner-title {
+  color: white;
+}
+
 @media (width >= 900px) {
   .banner {
     padding: 48px 64px;
@@ -46,15 +56,4 @@
     width: 50%;
     font-size: 40px;
   }
-
-/* Dark banner variant */
-.banner.banner {
-  background-color: #483030;
-  color: white;
-}
-
-.banner.banner .banner-title {
-  color: white;
-}
-
 }

@@ -1,0 +1,60 @@
+.accordion .accordion-item {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.accordion .accordion-item:first-child {
+  border-top: 1px solid #d9d9d9;
+}
+
+/* The clickable label row */
+.accordion .accordion-item-label {
+  position: relative;
+  cursor: pointer;
+  list-style: none; /* hide default triangle (Firefox) */
+  padding: 18px 44px 18px 4px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1d1d1d;
+  transition: color 0.15s ease;
+}
+
+/* Hide default disclosure triangle (Chrome/Safari) */
+.accordion .accordion-item-label::-webkit-details-marker {
+  display: none;
+}
+
+.accordion .accordion-item-label:hover {
+  color: #5e9fc2;
+}
+
+/* Plus / minus indicator on the right */
+.accordion .accordion-item-label::after {
+  content: '+';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  line-height: 1;
+  color: #5e9fc2;
+  transition: transform 0.2s ease;
+}
+
+.accordion .accordion-item[open] .accordion-item-label::after {
+  content: '\2212'; /* minus sign */
+}
+
+/* The body revealed when open */
+.accordion .accordion-item-body {
+  padding: 0 4px 18px;
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.accordion .accordion-item-body p {
+  margin: 0 0 12px;
+}
+
+.accordion .accordion-item-body p:last-child {
+  margin-bottom: 0;
+}
